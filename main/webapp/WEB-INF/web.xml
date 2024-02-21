@@ -1,0 +1,26 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+<display-name>Cinema Ticketing</display-name>
+
+<servlet>
+    <display-name>SaveUser</display-name>
+    <servlet-name>SaveUser</servlet-name>
+    <servlet-class>controller.SaveUser</servlet-class>
+</servlet>
+
+<servlet>
+    <display-name>LoginUser</display-name>
+    <servlet-name>LoginUser</servlet-name>
+    <servlet-class>controller.LoginUser</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SaveUser</servlet-name>
+    <url-pattern>/SaveUser</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>LoginUser</servlet-name>
+    <url-pattern>/LoginUser</url-pattern>
+</servlet-mapping>
+
+</web-app>
